@@ -1,14 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:'Courier New', Courier, monospace
     font-size: 15px;
+}
+header {
+    height: 120px;
 }
 .wrapper{
     width: 940px;
     margin: 0 auto;
     padding: 0 auto;
 }
-div{
-    display: block;
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 45px;
+    color: #444;
+}
+.orange {
+    color: #ff7100;
+}
+header nav {
+    float: right;
+    margin-top: 50px;
+}
+ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    float: left;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+#main-image {
+    height: 580px;
+    background: url(/Design/playa.jpg) center top no-repeat;
+    object-fit: cover;
+    min-width: 100%;
+}
+
+#main-image h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #444;
+    font-size: 55px;
 }
 .button-1 {
     display: block;
@@ -21,24 +75,33 @@ div{
     line-height: 50px;
     text-align: center;
     border-radius: 3px;
+    transition: 0.8s;
 }
-#main-image h2 {
-    font-weight: normal;
-    text-transform: uppercase;
+.button-1:hover {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #a8876c;
+    color: #130f0f;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
     text-align: center;
-    padding: 150px 0 40px 0;
-    margin-bottom: 20px;
+    border-radius: 3px;
+    border-radius: 30%;
 }
-h2 {
-    color: #444;
-    font-size: 55px;
+#steps ul {
+    margin: 80px 0;
 }
-h4 {
-    font-size: 24px;
-    color: #444;
+
+#steps ul li {
+    width: 300px;
+    float: left;
 }
-#steps p {
-    margin-bottom: 20px;
+#step-1 {
+    background: url(/Design/arton13746.jpg) no-repeat top center;
+    object-fit: cover;
+    border-radius: 5%;
 }
 #steps h4 {
     text-transform: uppercase;
@@ -47,22 +110,29 @@ h4 {
     text-align: center;
     margin-right: 10px;
 }
+h4 {
+    font-size: 24px;
+    color: #444;
+}
+#steps p {
+    margin: 20px;
+    color: #130f0f;
+}
+
 p {
     line-height: 20px;
-    color: #777;
+    color: #756363;
 }
-li {
-    text-align: -webkit-match-parent;
+
+#step-2 {
+    background: url(/Design/Journée_MD.webp) no-repeat top center;
+    object-fit: cover;
+    border-radius: 5%;
 }
-ul {
-    list-style: none;
-}
-#step-1 {
-    background: url(source/planifier.png) no-repeat top center;
-}
-#steps ul li {
-    width: 300px;
-    float: left;
+#step-3 {
+    background: url(/Design/adobestock_285186591-713x430.jpg) no-repeat top center;
+    object-fit: cover;
+    border-radius: 5%;
 }
 #possibilities {
     background-color: #efefef;
@@ -81,9 +151,6 @@ ul {
     text-align: center;
     margin-bottom: 20px;
 }
-article {
-    display: block;
-}
 article h4 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
@@ -91,6 +158,26 @@ article h4 {
     margin-bottom: 20px;
     text-align: center;
 }
+h3 {
+    font-size: 30px;
+    color: #444;
+}
+.clear {
+    clear: both;
+}
+#contact {
+    margin-top: 10px;
+    padding: 60px 0;
+    text-align: center;
+}
+#contact h3 {
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #02d8dd;
+    padding-bottom: 20px;
+}
+
 section {
     display: block;
 }
@@ -126,12 +213,13 @@ label {
     margin-right: 10px;
     color: #777;
 }
-input[type="text"] {
+input {
     padding: 10px;
     font-size: 20px;
     margin-right: 20px;
     border: 2px solid #ddd;
     border-radius: 3px;
+    font-style: italic;
 }
 .button-3 {
     color: #fff;
@@ -151,7 +239,4 @@ input[type="text"] {
 footer {
     height: 260px;
     background-color: #444;
-}
-.orange {
-    color: #ff7100;
 }
