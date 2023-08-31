@@ -19,9 +19,48 @@
         </nav>
       </div>
     </header>
-    <section id="possibilities">
+    <section id="possibilities_destination">
       <div class="wrapper">
-        
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:60%;">Nom</th>
+            <th style="width:40%;">Ville</th>
+          </tr>
+          <tr>
+            <td>La Canée</td>
+            <td>Crête</td>
+          </tr>
+          <tr>
+            <td>Héraklion</td>
+            <td>Crête</td>
+          </tr>
+          <tr>
+            <td>Réthymnon</td>
+            <td>Crête</td>
+          </tr>
+          <tr>
+            <td>La plage d’Elafonissi</td>
+            <td>Crête</td>
+          </tr>
+          <tr>
+            <td>Denver</td>
+            <td>Colorado</td>
+          </tr>
+          <tr>
+            <td>Séquoia</td>
+            <td>Calirfornie</td>
+          </tr>
+          <tr>
+            <td>Portland</td>
+            <td>Main</td>
+          </tr>
+          <tr>
+            <td>Canyonlands</td>
+            <td>Utah</td>
+          </tr>
+        </table> 
       </div>
     </section>
     <section id="contact">
@@ -36,9 +75,9 @@
         </p>
         <form>
             <label for="name">Nom</label>
-            <input type="text" id="name" placeholder="Votre nom :">
+            <input type="text" id="name" placeholder="ex: Aurélie Boutillier">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Votre Email">
+            <input type="email" name="email" id="email" placeholder="ex: aurelie.b@gmail.com">
             <input type="submit" value="Valider" class="button-3">
         </form>
       </div>
@@ -50,4 +89,27 @@
         <div class="copyright">Copyright &#169; Tous droits réservés</div>
     </footer>
   </body>
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+    
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
 </html>
