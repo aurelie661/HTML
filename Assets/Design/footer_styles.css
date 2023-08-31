@@ -25,7 +25,7 @@ label {
     color: #777;
 }
 input {
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     margin-right: 20px;
     border: 2px solid #ddd;
@@ -36,9 +36,9 @@ input[placeholder]{
     font-size: 15px;
 }
 .button-3 {
-    color: #ddd;
+    color: #777;
     font-size: 15px;
-    padding: 5px;
+    padding: 10px;
     background-color: #ff7100;
     border-style: none;
     transition: 0.7s;
@@ -46,11 +46,7 @@ input[placeholder]{
 }
 .button-3:hover {
     color: #0e0c0c;
-    font-size: 15px;
-    padding: 5px;
     background-color: #ff7100;
-    border-style: none;
-    border-radius: 10px;
 }
 .copyright {
     text-align: center;
@@ -59,11 +55,12 @@ input[placeholder]{
     color: #777;
 }
 footer {
-    height: 150px;
+    height: 260px;
     background-color: #444;
 }
 footer h2{
     color: #ddd;
     text-align: center;
     font-size: 55px;
+    padding: 70px;
 }

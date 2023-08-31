@@ -19,7 +19,7 @@ body{
 /* ----------------------------Main-image--------------------------- */
 #main-image {
     height: 580px;
-    background: url(/Assets/img/playa2.jpg) center top no-repeat;
+    background: url(/Assets/img/original.jpg) center top no-repeat;
     object-fit: cover;
     background-color: #cafbfc;
 }
@@ -41,8 +41,7 @@ body{
     float: left;
 }
 #step-1 {
-    background: url(/Assets/img/stylo.png) no-repeat top center;
-    background-size: 6em;
+    background: url(/Assets/img/planifier.png) no-repeat top center;
 }
 #steps h4 {
     text-transform: uppercase;
@@ -58,12 +57,10 @@ body{
     letter-spacing: 1px;
 }
 #step-2 {
-    background: url(/Assets/img/organiser.jpg) no-repeat top center;
-    background-size: 9em;
+    background: url(/Assets/img/organiser.png) no-repeat top center;
 }
 #step-3 {
-    background: url(/Assets/img/fusee.png) no-repeat top center;
-    background-size: 7em;
+    background: url(/Assets/img/voyager.png) no-repeat top center;
 }
 .clear {
     clear: both;
@@ -121,7 +118,7 @@ p {
     width: 120px;
     height: 50px;
     background: #ff7100;
-    color: #ddd;
+    color: #777;
     font-size: 20px;
     margin: 0 auto;
     line-height: 50px;
@@ -129,20 +126,12 @@ p {
     transition: 0.8s;
 }
 .button-1:hover {
-    display: block;
-    width: 120px;
-    height: 50px;
     background: #ff7100;
     color: #130f0f;
-    font-size: 20px;
-    margin: 0 auto;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 3px;
     border-radius: 10%;
 }
 .button-2 {
-    color: #ddd;
+    color: #777;
     background-color: #ff7100;
     padding: 6px 20px;
     transition: 0.5s;
@@ -150,6 +139,5 @@ p {
 .button-2:hover {
     color: #0e0c0c;
     background-color: #ff7100;
-    padding: 6px 20px;
     border-radius: 10px;
 }
