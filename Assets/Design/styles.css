@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    font-family:'Courier New', Courier, monospace
     font-size: 15px;
 }
 header {
@@ -19,12 +19,12 @@ header h1 {
     margin-top: 32px;
 }
 h1 {
-    font-family:'Courier New', Courier, monospace;
     font-size: 45px;
     color: #444;
 }
 .orange {
     color: #ff7100;
+    border-radius: 50%;
 }
 header nav {
     float: right;
@@ -35,7 +35,6 @@ ul {
 }
 header nav ul li {
     display: inline-block;
-    float: left;
 }
 header nav ul li a {
     text-transform: uppercase;
@@ -45,22 +44,24 @@ header nav ul li a {
 a {
     text-decoration: none;
     color: #444;
+    transition: 0.5s;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff7100;
 }
 #main-image {
     height: 580px;
-    background: url(/Design/playa.jpg) center top no-repeat;
+    background: url(/Assets/img/playa2.jpg) center top no-repeat;
     object-fit: cover;
-    min-width: 100%;
+    background-color: #cafbfc;
 }
-
 #main-image h2 {
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     padding: 150px 0 40px 0;
     margin-bottom: 20px;
-}
-h2 {
     color: #444;
     font-size: 55px;
 }
@@ -69,26 +70,25 @@ h2 {
     width: 120px;
     height: 50px;
     background: #ff7100;
-    color: #fff;
+    color: #ddd;
     font-size: 20px;
     margin: 0 auto;
     line-height: 50px;
     text-align: center;
-    border-radius: 3px;
     transition: 0.8s;
 }
 .button-1:hover {
     display: block;
     width: 120px;
     height: 50px;
-    background: #a8876c;
+    background: #ff7100;
     color: #130f0f;
     font-size: 20px;
     margin: 0 auto;
     line-height: 50px;
     text-align: center;
     border-radius: 3px;
-    border-radius: 30%;
+    border-radius: 10%;
 }
 #steps ul {
     margin: 80px 0;
@@ -99,9 +99,8 @@ h2 {
     float: left;
 }
 #step-1 {
-    background: url(/Design/arton13746.jpg) no-repeat top center;
-    object-fit: cover;
-    border-radius: 5%;
+    background: url(/Assets/img/stylo.png) no-repeat top center;
+    background-size: 6em;
 }
 #steps h4 {
     text-transform: uppercase;
@@ -115,28 +114,27 @@ h4 {
     color: #444;
 }
 #steps p {
-    margin: 20px;
-    color: #130f0f;
+    line-height: 20px;
+    width: 255px;
+    color: #777;
+    letter-spacing: 1px;
 }
-
 p {
     line-height: 20px;
-    color: #756363;
+    color: #777;
 }
-
 #step-2 {
-    background: url(/Design/Journée_MD.webp) no-repeat top center;
-    object-fit: cover;
-    border-radius: 5%;
+    background: url(/Assets/img/organiser.jpg) no-repeat top center;
+    background-size: 9em;
 }
 #step-3 {
-    background: url(/Design/adobestock_285186591-713x430.jpg) no-repeat top center;
-    object-fit: cover;
-    border-radius: 5%;
+    background: url(/Assets/img/fusee.png) no-repeat top center;
+    background-size: 7em;
 }
 #possibilities {
     background-color: #efefef;
     padding: 60px 0;
+    height: 260px;
 }
 #possibilities article {
     width: 460px;
@@ -158,12 +156,33 @@ article h4 {
     margin-bottom: 20px;
     text-align: center;
 }
-h3 {
-    font-size: 30px;
-    color: #444;
-}
 .clear {
     clear: both;
+}
+.overlay {
+    background: rgba(207, 207, 207, 0.95);
+    height: 100%;
+    width: 190px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+small {
+    font-size: 13px;
+    font-style: italic;
+}
+.button-2 {
+    color: #ddd;
+    background-color: #ff7100;
+    padding: 6px 20px;
+    transition: 0.5s;
+}
+.button-2:hover {
+    color: #0e0c0c;
+    background-color: #ff7100;
+    padding: 6px 20px;
+    border-radius: 10px;
 }
 #contact {
     margin-top: 10px;
@@ -177,35 +196,12 @@ h3 {
     border-bottom: 1px solid #02d8dd;
     padding-bottom: 20px;
 }
-
-section {
-    display: block;
-}
-.overlay {
-    background: rgba(255, 255, 255, 0.95);
-    height: 100%;
-    width: 190px;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-small {
-    font-size: 13px;
-    font-style: italic;
-}
-.button-2 {
-    color: #fff;
-    background-color: #ff7100;
-    padding: 6px 20px;
-    border-radius: 3px;
+h3 {
+    font-size: 30px;
+    color: #444;
 }
 form {
     margin: 60px 0 20px 0;
-}
-#contact {
-    padding: 60px 0;
-    text-align: center;
 }
 label {
     font-weight: bold;
@@ -214,7 +210,7 @@ label {
     color: #777;
 }
 input {
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
     margin-right: 20px;
     border: 2px solid #ddd;
@@ -222,13 +218,21 @@ input {
     font-style: italic;
 }
 .button-3 {
-    color: #fff;
+    color: #ddd;
     font-size: 20px;
-    font-weight: bold;
-    padding: 11px;
-    background-color: #02d8dd;
+    padding: 5px;
+    background-color: #ff7100;
     border-style: none;
-    border-radius: 3px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.button-3:hover {
+    color: #0e0c0c;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #ff7100;
+    border-style: none;
+    border-radius: 10px;
 }
 .copyright {
     text-align: center;
@@ -237,6 +241,11 @@ input {
     color: #777;
 }
 footer {
-    height: 260px;
+    height: 150px;
     background-color: #444;
+}
+footer h2{
+    color: #ddd;
+    text-align: center;
+    font-size: 55px;
 }
