@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/Assets/Design/header_styles.css" />
     <link rel="stylesheet" type="text/css" href="/Assets/Design/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/Design/destination_styles.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/Design/footer_styles.css" />
     <title>Travel Agency</title>
   </head>
   <body>
@@ -91,14 +94,12 @@
   </body>
   <script>
     function myFunction() {
-      // Declare variables
       var input, filter, table, tr, td, i, txtValue;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
       table = document.getElementById("myTable");
       tr = table.getElementsByTagName("tr");
     
-      // Loop through all table rows, and hide those who don't match the search query
       for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
         if (td) {

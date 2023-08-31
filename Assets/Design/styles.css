@@ -1,3 +1,4 @@
+/* ----------------------------Global---------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -6,50 +7,16 @@
 body{
     font-size: 15px;
 }
-header {
-    height: 120px;
+.orange {
+    color: #ff7100;
+    border-radius: 50%;
 }
 .wrapper{
     width: 940px;
     margin: 0 auto;
     padding: 0 auto;
 }
-header h1 {
-    float: left;
-    margin-top: 32px;
-}
-h1 {
-    font-size: 45px;
-    color: #444;
-}
-.orange {
-    color: #ff7100;
-    border-radius: 50%;
-}
-header nav {
-    float: right;
-    margin-top: 50px;
-}
-ul {
-    list-style: none;
-}
-header nav ul li {
-    display: inline-block;
-}
-header nav ul li a {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #444;
-    transition: 0.5s;
-}
-a:hover {
-    text-decoration: none;
-    color: #ff7100;
-}
+/* ----------------------------Main-image--------------------------- */
 #main-image {
     height: 580px;
     background: url(/Assets/img/playa2.jpg) center top no-repeat;
@@ -65,35 +32,10 @@ a:hover {
     color: #444;
     font-size: 55px;
 }
-.button-1 {
-    display: block;
-    width: 120px;
-    height: 50px;
-    background: #ff7100;
-    color: #ddd;
-    font-size: 20px;
-    margin: 0 auto;
-    line-height: 50px;
-    text-align: center;
-    transition: 0.8s;
-}
-.button-1:hover {
-    display: block;
-    width: 120px;
-    height: 50px;
-    background: #ff7100;
-    color: #130f0f;
-    font-size: 20px;
-    margin: 0 auto;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 3px;
-    border-radius: 10%;
-}
+/* -------------------------steps----------------------------- */
 #steps ul {
     margin: 80px 0;
 }
-
 #steps ul li {
     width: 300px;
     float: left;
@@ -109,19 +51,11 @@ a:hover {
     text-align: center;
     margin-right: 10px;
 }
-h4 {
-    font-size: 24px;
-    color: #444;
-}
 #steps p {
     line-height: 20px;
     width: 255px;
     color: #777;
     letter-spacing: 1px;
-}
-p {
-    line-height: 20px;
-    color: #777;
 }
 #step-2 {
     background: url(/Assets/img/organiser.jpg) no-repeat top center;
@@ -131,6 +65,10 @@ p {
     background: url(/Assets/img/fusee.png) no-repeat top center;
     background-size: 7em;
 }
+.clear {
+    clear: both;
+}
+/* --------------------------Possibilities----------------------- */
 #possibilities {
     background-color: #efefef;
     padding: 60px 0;
@@ -156,9 +94,6 @@ article h4 {
     margin-bottom: 20px;
     text-align: center;
 }
-.clear {
-    clear: both;
-}
 .overlay {
     background: rgba(207, 207, 207, 0.95);
     height: 100%;
@@ -172,6 +107,40 @@ small {
     font-size: 13px;
     font-style: italic;
 }
+h4 {
+    font-size: 24px;
+    color: #444;
+}
+p {
+    line-height: 20px;
+    color: #777;
+}
+/* -----------------------------Button--------------------------------- */
+.button-1 {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7100;
+    color: #ddd;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.8s;
+}
+.button-1:hover {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7100;
+    color: #130f0f;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    border-radius: 10%;
+}
 .button-2 {
     color: #ddd;
     background-color: #ff7100;
@@ -183,111 +152,4 @@ small {
     background-color: #ff7100;
     padding: 6px 20px;
     border-radius: 10px;
-}
-#contact {
-    margin-top: 10px;
-    padding: 60px 0;
-    text-align: center;
-}
-#contact h3 {
-    width: 400px;
-    text-transform: uppercase;
-    margin: 0 auto 20px auto;
-    border-bottom: 1px solid #02d8dd;
-    padding-bottom: 20px;
-}
-h3 {
-    font-size: 30px;
-    color: #444;
-}
-form {
-    margin: 60px 0 20px 0;
-}
-label {
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 10px;
-    color: #777;
-}
-input {
-    padding: 5px;
-    font-size: 20px;
-    margin-right: 20px;
-    border: 2px solid #ddd;
-    border-radius: 3px;
-    font-style: italic;
-}
-input[placeholder]{
-    font-size: 15px;
-}
-.button-3 {
-    color: #ddd;
-    font-size: 15px;
-    padding: 5px;
-    background-color: #ff7100;
-    border-style: none;
-    transition: 0.7s;
-    cursor: pointer;
-}
-.button-3:hover {
-    color: #0e0c0c;
-    font-size: 15px;
-    padding: 5px;
-    background-color: #ff7100;
-    border-style: none;
-    border-radius: 10px;
-}
-.copyright {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 20px;
-    color: #777;
-}
-footer {
-    height: 150px;
-    background-color: #444;
-}
-footer h2{
-    color: #ddd;
-    text-align: center;
-    font-size: 55px;
-}
-/* ---------------------------------Page destination--------------------------------- */
-#myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myTable {
-    border-collapse: collapse; /* Collapse borders */
-    width: 100%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
-    font-size: 18px; /* Increase font-size */
-  }
-  
-  #myTable th, #myTable td {
-    text-align: left; /* Left-align text */
-    padding: 12px; /* Add padding */
-  }
-  
-  #myTable tr {
-    /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #myTable tr.header, #myTable tr:hover {
-    
-    background-color: #777;
-    cursor: pointer;
-  }
-  #possibilities_destination {
-    background-color: #efefef;
-    padding: 60px 0;
-    height: 500px;
 }
